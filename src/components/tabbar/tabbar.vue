@@ -17,13 +17,7 @@
 import { tabbarData } from '@/assets/data/tabbar'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-// import { getAssetsURL } from '@/utils/load_assets'
-
-const getAssetsURL = (url) => {
-  // const url = 'tabbar/tabbar_home.png'
-  return new URL(`../../assets/img/${url}`, import.meta.url).href
-  // return new URL(`../../assets/img/tabbar/tabbar_home.png`, import.meta.url).href
-}
+import { getAssetsURL } from '@/utils/load_assets'
 
 const router = useRouter()
 
