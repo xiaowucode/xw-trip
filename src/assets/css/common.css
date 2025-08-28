@@ -1,8 +1,18 @@
 :root {
   --color-primary: #ff9854;
+
+  /* 搜素框图标颜色修改 */
+  --van-search-left-icon-color: var(--color-primary) !important;
 }
 
 body {
   font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
+}
+
+.top-page {
+  position: relative;
+  z-index: 9;
+  background-color: #fff;
+  height: 100vh;
+  overflow-y: auto;
 }
